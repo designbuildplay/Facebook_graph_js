@@ -1,0 +1,114 @@
+
+
+body, html, p, ul, li{ margin:0px; padding: 0px; }
+
+
+body{ 
+
+	
+   	 background-color: white;
+   	 margin: 0;
+	 padding: 0;
+	 min-width: 810px;
+	 font: 20px helvetica, arial, sans-serif;
+	 font-weight: 200;
+	 padding-bottom: 40px;
+	 color: #868887;
+
+	background: -moz-linear-gradient(45deg,  rgba(0,0,0,0.32) 0%, rgba(0,0,0,0) 100%);
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(0,0,0,0.32)), color-stop(100%,rgba(0,0,0,0)));
+	background: -webkit-linear-gradient(45deg,  rgba(0,0,0,0.32) 0%,rgba(0,0,0,0) 100%);
+	background: -o-linear-gradient(45deg,  rgba(0,0,0,0.32) 0%,rgba(0,0,0,0) 100%);
+	background: -ms-linear-gradient(45deg,  rgba(0,0,0,0.32) 0%,rgba(0,0,0,0) 100%);
+	background: linear-gradient(45deg,  rgba(0,0,0,0.32) 0%,rgba(0,0,0,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52000000', endColorstr='#00000000',GradientType=1 );
+
+}
+
+
+img {
+  display: block;
+ /* width: 100%;*/
+}
+
+.margT{margin-top: 30px; }
+.margB{margin-bottom: 30px; }
+.button{ margin-left: 10px;  height: 80px; }
+
+#nav{
+	height: 80px;
+	display: none;
+}
+
+#albums{ font-size: 12px; }
+#content{
+	display: none;
+}
+
+#status{
+/*	position: absolute;
+	left: 50%;
+	margin-left: -205px;
+*/
+}
+
+.profilepix{
+	left: 50%;
+	margin-left: -400px;
+	margin-top: -140px;
+}
+.clear{clear: both;}
+
+.poloroid{
+	position: absolute;
+	border: 5px solid #ffffff;
+	border-bottom: 30px solid #ffffff;
+	background: #ffffff;
+}
+
+.boxed{
+	background: #ffffff;
+	-moz-box-shadow: 1px 4px 10px #9d9d9d;
+	-webkit-box-shadow: 1px 4px 10px #9d9d9d;
+	box-shadow: 1px 4px 10px #9d9d9d;
+}
+
+/*#lilly{
+	 background: url('../img/lilly.jpg') 0 0; 
+	 background-size: 100% 100%;
+	 width:343px;
+	 height: 290px;
+	 position: absolute;
+	 z-index: 1;
+	 top: 330px;
+	 left: 65%;
+}*/
+
+a:link {color:#000;}      /* unvisited link */
+a:visited {color:#000;}  /* visited link */
+a:hover {color:#2f6ed7;}  /* mouse over link */
+a:active {color:#000;}  /* selected link */
+
+ .zoomImg{
+                             /*  name  time   playNum   easing   delay   fillmode  */
+              -webkit-animation: rotateAni 5s infinite ease-in-out 0s ; /* Safari 4+ */
+              -moz-animation:    rotateAni 5s 1 ease-in-out 0s ; /* Fx 5+ */
+              -o-animation:      rotateAni 5s 1 ease-in-out 0s ; /* Opera 12+ */
+              animation:         rotateAni 5s 1 ease-in-out 0s ; /* IE 10+ */
+          }
+
+          @-webkit-keyframes rotateAni
+          {
+                0% { 
+                	 -webkit-transform: rotate(70deg);
+				}
+
+				50% {
+                	 -webkit-transform: rotate(-70deg);
+                }
+                
+                100% {
+                	 -webkit-transform: rotate(70deg);
+                }
+          }
+
