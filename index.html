@@ -2,9 +2,7 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/base.css">
 		<link rel="stylesheet" type="text/css" href="css/topcoat-mobile-light.css">
-		
-		<script type="text/javascript" src="js/fbconnect.js"></script>
-
+		<script type="text/javascript" src="js/lib/jquery-1.7.2.min.js"></script>
 	</head>
 <body>
 	
@@ -12,10 +10,11 @@
 
 <div align="center">
 
-	<h2 class="margT">DBP Facebook OAuth JS</h2>
+	<h2 class="margT">designbuildplay Facebook OAuth JS</h2>
 
 	<div id="nav">
-		<p class='margT button'><input type='button'  class="topcoat-button--cta" value='Get Photo' onclick='getPhoto();'/></p>
+		<p class='margT button'><input type='button'  class="topcoat-button--cta" value='Get Profile Photo' onclick='getPhoto();'/></p>
+		<p class='margT button'><input type='button'  class="topcoat-button--cta" value='Get All Pics' onclick='getAllPics();'/></p>
 		<p class='margT button'><input type='button'  class="topcoat-button--cta" value='Show Albums' onclick='getAlbumPhotos();'/></p>
 		<p class='margT button'><input type='button'  class="topcoat-button--cta" value='Logout' onclick='Logout();'/></p>
 	</div>
@@ -26,18 +25,24 @@
 	</div>
 
 
-
+	<div id="bigpic"></div>
+	
 	<div id="content">
 		<div class="margT margB">ALBUMS:</div>
 		<ul id="albums" class="margB"></ul>
-		<div id="pics" class="margT">your pics</div>
+		<div id="pics" class="margT margB">YOUR PICS:</div>
 		<ul id="albumspic" class="margB"></ul>
+
+		<div class="clear"></div>
 
 		<div id="message" class="margT">
 			Logs:<br/>
 		</div>
 	</div>
 
+
+	<script type="text/javascript" src="js/fbconnect.js"></script>
 </div>
+
 </body>
 </html>
